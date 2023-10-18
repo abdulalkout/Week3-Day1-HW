@@ -13,7 +13,7 @@ const maxOfThreethat = function(x, y, z) {
     }
 }
 
-console.log(maxOfThreethat(8,8,8))
+console.log(maxOfThreethat(9,8,10))
 
 
 // Define a function, as a function declaration, 
@@ -57,4 +57,18 @@ function multiplyArray(arrNumbers =[]) {
     return multiSum;
 }
 
-console.log(multiplyArray([2,4,5]))
+console.log(multiplyArray([2,4,5]));
+
+
+// Define a function, as a function expression,
+// numArgs that returns the number of arguments passed to the function when called.
+
+const numArgs = function (...arg){
+    let numberOfArg =0;
+    for(let i=0; i <= arg.length; i++){
+        numberOfArg = i
+    }
+    return numberOfArg
+}
+
+console.log(numArgs(10, 13, 95,'abdul', 'Chicago'));
