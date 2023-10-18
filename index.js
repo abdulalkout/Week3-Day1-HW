@@ -43,3 +43,18 @@ const sumArray = function (arr=[]){
 }
 
 console.log(sumArray([2,2,2,5]))
+
+
+
+// Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product those numbers. 
+//For example, multiplyArray([2, 4, 5]);would return 40.
+
+function multiplyArray(arrNumbers =[]) {
+    let multiSum =1;
+    arrNumbers.forEach(number => {
+        multiSum = multiSum * number;
+    })
+    return multiSum;
+}
+
+console.log(multiplyArray([2,4,5]))
